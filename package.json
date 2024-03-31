@@ -1,8 +1,10 @@
 {
   "name": "express",
   "version": "0.0.1",
+  "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.ts"
+    "dev": "nodemon src/index.ts",
+    "test": "jest"
   },
   "dependencies": {
     "cors": "^2.8.5",

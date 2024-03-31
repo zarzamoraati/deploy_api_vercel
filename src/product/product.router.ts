@@ -1,7 +1,7 @@
 import express,{Express} from "express";
-import { getAllProducts } from "./product.controller";
+import { addProduct, getAllProducts } from "./product.controller";
 const productRouter=express.Router()
 
-productRouter.route("/products").get(getAllProducts).post()
+productRouter.route("/products").get(getAllProducts).post(addProduct)
 
 export const router_wrap=(app:Express)=>app.use("/",productRouter)
